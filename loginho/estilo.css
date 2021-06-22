@@ -1,0 +1,121 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.checklist{
+    letter-spacing: 2px;
+    margin: 100px 0px;
+    color: white;
+    font-size: 40px;
+    
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    background-color:#444444;
+    justify-content: left;
+    display: flex;
+    align-items: center;
+    
+}
+
+.login_container {
+    min-height: 400px;
+    width: 500px;
+    background-color: #444;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5%
+}
+
+.login_titulo {
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+    color: white;
+    font-size: 30px;
+    
+}
+
+.login_form {
+    width:  100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.login_input_titulo{
+    letter-spacing: 1.5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.login_input {
+    margin: 20px 0px;
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: unset;
+    border-radius: 5px;
+    outline: none;
+}
+ .login_submit{
+    width: 100px;
+    height: 38px;
+    outline: none;
+    background: #39CC14;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 6px;
+    margin: 0px 175px;
+ }
+
+ .logo {
+    width: 350px;
+    margin: 100px 45px;
+    align-items: center;
+ }
+
+ .linha{
+     border: solid 2px white;
+     height: 70%;
+     border-radius: 10px;
+     
+     
+     
+ }
+
+ .bem{
+    letter-spacing: 2px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 500px;
+ }
+
+ .imagem1 {
+    width: 682px;
+    height: 508px;
+  margin-top: 100px;
+  margin-left: 300px;
+ }
+
+ #msgError{
+     text-align: center;
+     color: red;
+     background-color: black;
+     padding: 10px;
+     border-radius: 4px;
+     display: none;
+ }
