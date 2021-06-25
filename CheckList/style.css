@@ -8,7 +8,12 @@ body {
     height: 80vh;
     margin: 0 auto;
     display: grid;
-    grid-template-areas: "c1 c1 c1 c1" "c2 c2 c2 c2" "c4 c5 c6 c7" "c3 c3 c3 c3 " "c3 c3 c3 c3";
+    grid-template-areas: 
+    "c1 c1 c1 c1" 
+    "c2 c2 c2 c2" 
+    "c4 c4 c7 c7" 
+    "c3 c3 c3 c3 " 
+    "c3 c3 c3 c3";
 }
 
 .nova {
@@ -67,7 +72,7 @@ input {
     transition: all 0.5s;
 }
 
-.buttonOpcoes {
+.buttonOpcoes, .buttonSalvar {
     border: none;
     margin-left: 5%;
     background: transparent;
@@ -78,28 +83,38 @@ input {
     transition: all 0.5s;
 }
 
+.buttonSalvar :hover {
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
 .perguntas {
     grid-area: c3;
     border: 0px solid red;
     margin: 0% 10% 0% 5%;
+    display: none;
 }
+
 
 .buttonPergunta {
     border: none;
     background: transparent;
-    margin: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 25%;
 }
 
 .pergunta1, .pergunta2 {
-    display: flex;
     background: white;
     border: 1px solid rgb(202, 201, 201);
     border-radius: 10px;
     height: 24%;
     margin-left: 2%;
     margin-top: 1%;
-    align-items: center;
     padding: 1%;
+    text-align: center;
+}
+
+.pergunta0{
+    display: flex;
 }
 
 .tituloPergunta1, .tituloPergunta2 {
@@ -119,15 +134,17 @@ input {
     font-weight: bold;
     border-radius: 3px;
     width: 70%;
+    height: 50px;
+    margin-top: -50px;
 }
 
 .ferramentas {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .assinatura {
     grid-area: c4;
-    margin-left: 150px;
+    margin-left: 210px;
 }
 
 .escolhas {
@@ -144,4 +161,8 @@ input {
     grid-area: c7;
     margin-right: 150px;
     margin-left: -75px;
+}
+
+.adicao{
+    border: none;
 }

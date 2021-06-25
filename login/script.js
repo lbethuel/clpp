@@ -10,7 +10,7 @@ const init = () => {
         submitButton.textContent = "Erro"
     }
 
-    const successHandler = () => {
+    const successHandler = () => { 
         submitButton.classList.remove('error');
         submitButton.classList.add('success');
         submitButton.textContent = "Entrando";
