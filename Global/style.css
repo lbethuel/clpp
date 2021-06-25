@@ -1,0 +1,62 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+    background-color:#f1f2f5;
+}
+
+.cabecario {
+	background: #326744;
+	padding: 20px 0;
+    height: 100px;
+}
+
+.logo {
+    margin-top: -1.3%;
+	margin-left: 5%;
+    max-width:220px;
+    position: absolute;
+}
+
+nav {
+    position: absolute;   
+    left: 25%;
+    top: 6%
+}
+
+nav li{
+	display: inline;
+    margin: 100px;
+}
+
+nav a{
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20px;	
+    
+}
+nav a:hover{
+	color: #f07706;
+	cursor: pointer;
+    
+}
+
+ul ul {
+    margin-left: 23%;
+    position: absolute;
+    background: #326744;
+    border-radius: 15px;
+    opacity: 0.9;
+    display: none;
+}
+
+ul ul li {
+    display: block
+}
+
+ul :hover ul{
+    display: block;
+    background-color: #326744;
+}
+
+
+

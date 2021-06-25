@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Global/style.css">
     <link rel="stylesheet" href="../Global/reset.css">
     <link rel="stylesheet" href="../CheckList/ChekList.html">
     <link rel="stylesheet" href="../Relatorio/relatorio.html">
     <link rel="stylesheet" href="../Mensagem/mensagem.html">
-    <script src="../loginho/script.js"></script>
-    <script src="../loginho/login.html"></script>
+    <link rel="stylesheet" href="../login/script.js">
+    <link rel="stylesheet" href="../login/login.html">
+    <script src="../login/script.js"></script>
+    <script src="../login/login.html"></script>
     <title>Home - PegPese</title>
 
 </head>
@@ -29,62 +32,54 @@
         <nav>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="../CheckList/ChekList.html">CheckList</a></li>
+                <li><a href="../CheckList/novo.html">CheckList</a></li>
                 <li><a href="../Relatorio/relatorio.html">Relatório</a></li>
                 <li><a href="../Mensagem/mensagem.html">Mensagem</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <header>
+    <main class="container">
+        <div class="caixaCheck">
             <h2 class="check">CheckList Peg Pese</h2>
             <h3 class="check2">CLPP</h3>
-        </header>
+        </div>
 
-        <article class="caixa1">
-            <header>
-                <p class="textocaixa1">Bem vindo</p>
+        <div class="caixa1">
+            <p class="tituloCaixa1">Bem vindo</p>
 
-                <p class="ususario">Lucas_bethuel</p>
-
+            <p class="ususario">Lucas_bethuel</p>
+            <article class="mensagem">
                 <a href="../Mensagem/mensagem.html">
-                    <div class="mensagem">
-                        <p class="titulom">Mensagem:</p>
-                        <p class="corpom">Usuário1: 3 mensagens não lidas</p>
-                        <p class="corpom">Usuário2: 3 mensagens não lidas</p>
-                    </div>
+
+                    <p class="titulom">Mensagem:</p>
+                    <p class="corpom">Usuário1: 3 mensagens não lidas</p>
+                    <p class="corpom">Usuário2: 3 mensagens não lidas</p>
+                    <p class="corpom">Usuário2: 3 mensagens não lidas</p>
                 </a>
-            </header>
-        </article>
-    </section>
+            </article>
+        </div>
 
-    <section class="c2">
-        <header>
+        <div class="caixa2">
             <a href="../Relatorio/relatorio.html">
-                <div class="caixa2">
-
-                    <p class="tituloRelatorio">Relatorio</p>
-
-                    <p class="corpor1">Recebidos: 0</p>
-                    <p class="corpor1">Enviados: 2</p>
-                    <p class="corporp">Pendente: 1</p>
-
-                </div>
+                <p class="tituloRelatorio">Relatorio</p>
+                <p class="corpor1">Recebidos: 0</p>
+                <p class="corpor1">Enviados: 2</p>
+                <p class="corporp">Pendente: 1</p>
             </a>
-            <a href="../CheckList/ChekList.html">
-                <div class="caixa2">
+        </div>
 
-                    <p class="tituloCheckList">CheckList</p>
+        <div class="caixa3">
+            <a href="../CheckList/novo.html">
 
-                    <p class="corpoc1">Enviados: 0</p>
-                    <p class="corpoc1">Respondidos: 2</p>
-                    <p class="corpocp">Pendente: 1</p>
-
-                </div>
+                <p class="tituloCheckList">CheckList</p>
+                <p class="corpoc1">Enviados: 0</p>
+                <p class="corpoc1">Respondidos: 2</p>
+                <p class="corpocp">Pendente: 1</p>
             </a>
-        </header>
-    </section>
+        </div>
+
+    </main>
 
 </body>
 

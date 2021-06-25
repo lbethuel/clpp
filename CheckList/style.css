@@ -1,0 +1,147 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    border: 0px solid red;
+    width: 99%;
+    height: 80vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "c1 c1 c1 c1" "c2 c2 c2 c2" "c4 c5 c6 c7" "c3 c3 c3 c3 " "c3 c3 c3 c3";
+}
+
+.nova {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 1%;
+    font-size: 35px;
+    color: rgb(50, 103, 68);
+    grid-area: c1;
+    border: px solid rgb(250, 201, 111);
+}
+
+.divisaoEditar {
+    margin: 0% 0% 0% 8%;
+    display: flex;
+    width: 80%;
+    height: 100px;
+    border: 1px solid rgb(233, 227, 227);
+    background: rgb(240, 203, 155);
+    border-radius: 30px;
+    grid-area: c2;
+    border: 0px solid rgb(250, 249, 248);
+}
+
+.editar {
+    width: 60%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+    border: 0px solid black;
+}
+
+input {
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid rgb(233, 227, 227)
+}
+
+.opcoes {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonEdit {
+    border: none;
+    margin-left: 3%;
+    background: transparent;
+}
+
+.buttonEdit :hover {
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
+.buttonOpcoes {
+    border: none;
+    margin-left: 5%;
+    background: transparent;
+}
+
+.buttonOpcoes :hover {
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
+.perguntas {
+    grid-area: c3;
+    border: 0px solid red;
+    margin: 0% 10% 0% 5%;
+}
+
+.buttonPergunta {
+    border: none;
+    background: transparent;
+    margin: 0% 0% 0% 0%;
+}
+
+.pergunta1, .pergunta2 {
+    display: flex;
+    background: white;
+    border: 1px solid rgb(202, 201, 201);
+    border-radius: 10px;
+    height: 24%;
+    margin-left: 2%;
+    margin-top: 1%;
+    align-items: center;
+    padding: 1%;
+}
+
+.tituloPergunta1, .tituloPergunta2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.corpoPergunta {
+    text-align: center;
+}
+
+.assinatura, .escolhas, .texto, .data {
+    align-items: center;
+    text-align: center;
+    border: 0px solid red;
+    background: gainsboro;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 70%;
+}
+
+.ferramentas {
+    margin-top: 20px;
+}
+
+.assinatura {
+    grid-area: c4;
+    margin-left: 150px;
+}
+
+.escolhas {
+    grid-area: c5;
+    margin-left: 55px;
+}
+
+.texto {
+    grid-area: c6;
+    margin-right: 65px;
+}
+
+.data {
+    grid-area: c7;
+    margin-right: 150px;
+    margin-left: -75px;
+}

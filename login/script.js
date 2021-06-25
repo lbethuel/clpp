@@ -14,7 +14,7 @@ const init = () => {
         submitButton.classList.remove('error');
         submitButton.classList.add('success');
         submitButton.textContent = "Entrando";
-        window.location.href = "../home.html";
+        window.location.href = "../Home/home.html";
     }
 
     if (submitButton) {
