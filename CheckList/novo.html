@@ -14,11 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
     <script defer type="text/javascript" src="./novo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>CheckList - PegPese</title>
 </head>
 
 <body>
-    
+
     <header class="cabecario">
         <p href="../Home/home.html">
         <h1 class="caixa"><img class="logo" src="../img/logo.png"></h1>
@@ -44,49 +45,57 @@
                 <p>NOVA CHECKLIST</p>
             </h2>
         </div>
-        <div class="divisaoEditar">
-            <div class="editar">
-                <input disabled id="novoCheckList" placeholder="Digite aqui para nova CheckList">
-                <button onclick="novaCheckList()" class="buttonEdit"><img class="edit"
-                        src="https://img.icons8.com/ios-glyphs/30/000000/edit--v2.png" /></button>
-            </div>
+        <div class="principal">
+            <div class="divisaoEditar">
+                <div class="editar">
+                    <input disabled id="novoCheckList" placeholder="Digite aqui para nova CheckList">
+                    <button onclick="novaCheckList()" class="buttonEdit"><img class="edit"
+                            src="https://img.icons8.com/ios-glyphs/30/000000/edit--v2.png" /></button>
+                </div>
 
-            <div class="opcoes">
-                <button class="buttonOpcoes"><img
-                        src="https://img.icons8.com/material-sharp/24/000000/appointment-reminders--v2.png"
-                        width="30px" /></button>
-                <button class="buttonOpcoes"><img
-                        src="https://img.icons8.com/ios-glyphs/30/000000/visible--v2.png" /></button>
-                <button class="buttonSalvar"><img
-                        src="https://img.icons8.com/ios-glyphs/30/000000/save--v2.png" /></button>
-                <button class="buttonOpcoes"><img
-                        src="https://img.icons8.com/ios-glyphs/30/000000/trash--v3.png" /></button>
+                <div class="opcoes">
+                    <button class="buttonOpcoes"><img
+                            src="https://img.icons8.com/material-sharp/24/000000/appointment-reminders--v2.png"
+                            width="30px" /></button>
+                    <button class="buttonOpcoes"><img
+                            src="https://img.icons8.com/ios-glyphs/30/000000/visible--v2.png" /></button>
+                    <button class="buttonSalvar"><img
+                            src="https://img.icons8.com/ios-glyphs/30/000000/save--v2.png" /></button>
+                    <button class="buttonOpcoes"><img
+                            src="https://img.icons8.com/ios-glyphs/30/000000/trash--v3.png" /></button>
+                </div>
             </div>
         </div>
         <div class="perguntas">
             <article class="pergunta1">
-                <p class="tituloPergunta1"> Nome_da_Perguntas 1 </p>
-                <button class="buttonPergunta"><img class="buttonImagPergunta"
-                        src="https://img.icons8.com/ios-glyphs/30/000000/edit--v2.png" /></button>
-                <button class="buttonPergunta"><img class="buttonImagPergunta"
-                        src="https://img.icons8.com/ios-glyphs/30/000000/delete-sign.png" /></button>
-                <p class="corpoPergunta">
-                    Atualmente, as questões ambientais e sustentáveis são discutidas e tratadas em todo mundo. Sendo
-                    assim, o curso Meio Ambiente e <strong> <b>Sustentabilidade</b> </strong>proporciona o conhecimento dos tópicos relativos
-                    aos
-                </p>
-                <button class="adicao">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png" />
-                </button>
+                <p class="tituloPergunta1"> Perguntas 1 </p>
+                <textarea class="corpoPergunta" placeholder="Digite aqui sua pergunta" ></textarea>
+                <div class="buttonAdicao">
+                    <button class="adicao">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/verified-account--v2.png"/>
+                    </button>
+                    <button class="adicao">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/edit--v2.png" />
+                    </button>
+                    <button class="adicao">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/delete-sign.png" />
+                    </button>
+                </div>
             </article>
         </div>
+        <div class="vazio1"></div>
+        <div class="vazio2"> <button class="adicao1">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png" /> Adicionar nova pergunta
+        </button></div>
         <div class="assinatura">
             <p class="ferramentas">assinatura</p>
         </div>
         <div class="data">
             <p class="ferramentas">data/localizacao</p>
         </div>
+    
     </main>
+
 </body>
 
 </html>

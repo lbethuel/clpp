@@ -2,68 +2,75 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
-.container {
+.container {    
     border: 0px solid red;
-    width: 99%;
-    height: 80vh;
-    margin: 0 auto;
     display: grid;
     grid-template-areas: 
     "c1 c1 c1 c1" 
     "c2 c2 c2 c2" 
-    "c4 c4 c7 c7" 
+    "v1 c4 c7 v2" 
     "c3 c3 c3 c3 " 
     "c3 c3 c3 c3";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.vazio1{
+grid-area: v1;
+}
+
+.vazio2{
+grid-area: v2;
 }
 
 .nova {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    align-items: center;
-    margin-top: 1%;
+    padding-top: 30px;
     font-size: 35px;
     color: rgb(50, 103, 68);
     grid-area: c1;
-    border: px solid rgb(250, 201, 111);
+    border: 0px solid rgb(250, 201, 111);
+}
+
+.principal{
+    display: flex;
+    align-items: flex-end;
+    grid-area: c2;
 }
 
 .divisaoEditar {
-    margin: 0% 0% 0% 8%;
     display: flex;
-    width: 80%;
+    align-items: center;
     height: 100px;
-    border: 1px solid rgb(233, 227, 227);
+    width: 100%;
     background: rgb(240, 203, 155);
     border-radius: 30px;
-    grid-area: c2;
-    border: 0px solid rgb(250, 249, 248);
+    border: 0px solid rgb(240, 6, 6);
 }
 
 .editar {
-    width: 60%;
-    height: 50px;
     display: flex;
-    justify-content: center;
-    margin-top: 1.5%;
     border: 0px solid black;
+    margin: 0px 350px 0px 300px;
+    align-items: center;
 }
 
 input {
     width: 400px;
-    border-radius: 10px;
-    border: 1px solid rgb(233, 227, 227)
+    height: 30px;
+    border-radius: 20px;
+    margin-right: 30px;
+    border: 1px solid rgb(233, 227, 227);
+    
 }
 
 .opcoes {
-    width: 40%;
     display: flex;
     justify-content: center;
+    border: 0px solid rgb(136, 0, 0)
 }
 
 .buttonEdit {
     border: none;
-    margin-left: 3%;
     background: transparent;
 }
 
@@ -74,13 +81,8 @@ input {
 
 .buttonOpcoes, .buttonSalvar {
     border: none;
-    margin-left: 5%;
+    width: 5em;
     background: transparent;
-}
-
-.buttonOpcoes :hover {
-    transform: scale(1.5);
-    transition: all 0.5s;
 }
 
 .buttonSalvar :hover {
@@ -88,81 +90,98 @@ input {
     transition: all 0.5s;
 }
 
+.buttonOpcoes :hover {
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
 .perguntas {
     grid-area: c3;
     border: 0px solid red;
-    margin: 0% 10% 0% 5%;
     display: none;
-}
-
-
-.buttonPergunta {
-    border: none;
-    background: transparent;
-    margin: 0% 0% 0% 25%;
-}
-
-.pergunta1, .pergunta2 {
-    background: white;
-    border: 1px solid rgb(202, 201, 201);
-    border-radius: 10px;
-    height: 24%;
-    margin-left: 2%;
-    margin-top: 1%;
-    padding: 1%;
-    text-align: center;
+    
 }
 
 .pergunta0{
+    grid-area: c3;
+    border: 0px solid red;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.tituloPergunta1, .tituloPergunta2 {
-    font-size: 18px;
+.buttonAdicao{
+width: 100%;
+text-align: center;
+margin-top: 20px;
+}
+
+.adicao {
+    border: none;
+    background: transparent;
+}
+
+.adicao1 {
+    border: none;
+    background: transparent;
+}
+
+.adicao :hover{
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
+.adicao1 :hover{
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
+.pergunta1 {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid rgb(230, 221, 221);
+    padding: 30px;
+    margin-top: 1%;
+    width: 90%;
+}
+
+
+
+.tituloPergunta1 {
+    display: inline;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .corpoPergunta {
     text-align: center;
+    margin: 10px;
+    font-size: 19px;
+    width: 80%;
+    
 }
 
-.assinatura, .escolhas, .texto, .data {
-    align-items: center;
+.assinatura, .data {
     text-align: center;
     border: 0px solid red;
     background: gainsboro;
     font-weight: bold;
-    border-radius: 3px;
-    width: 70%;
-    height: 50px;
-    margin-top: -50px;
+    border-radius: 20px;
+    margin: 5px;
 }
 
 .ferramentas {
-    margin-top: 10px;
+    padding: 10px
 }
 
 .assinatura {
     grid-area: c4;
-    margin-left: 210px;
-}
-
-.escolhas {
-    grid-area: c5;
-    margin-left: 55px;
-}
-
-.texto {
-    grid-area: c6;
-    margin-right: 65px;
 }
 
 .data {
     grid-area: c7;
-    margin-right: 150px;
-    margin-left: -75px;
 }
 
-.adicao{
-    border: none;
+.vazio2{
+    display: flex;
 }
