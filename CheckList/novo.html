@@ -21,9 +21,9 @@
 <body>
 
     <header class="cabecario">
-        <p href="../Home/home.html">
-        <h1 class="caixa"><img class="logo" src="../img/logo.png"></h1>
-        </p>
+        <a href="../Home/home.html">
+            <h1 class="caixa"><img class="logo" src="../img/logo.png"></h1>
+        </a>
         <nav>
             <ul>
                 <li><a href="../Home/home.html">Home</a></li>
@@ -68,32 +68,61 @@
         </div>
         <div class="perguntas">
             <article class="pergunta1">
-                <p class="tituloPergunta1"> Perguntas 1 </p>
-                <textarea class="corpoPergunta" placeholder="Digite aqui sua pergunta" ></textarea>
-                <div class="buttonAdicao">
-                    <button class="adicao">
-                        <img src="https://img.icons8.com/ios-glyphs/30/000000/verified-account--v2.png"/>
-                    </button>
-                    <button class="adicao">
-                        <img src="https://img.icons8.com/ios-glyphs/30/000000/edit--v2.png" />
-                    </button>
-                    <button class="adicao">
-                        <img src="https://img.icons8.com/ios-glyphs/30/000000/delete-sign.png" />
-                    </button>
+                <div class="per">
+                    <input type="text" name="" id="" class="tituloPergunta1" placeholder="Perguntas 1">
+                    <div class="buttonAdicao">
+                        <button class="adicao3">
+                            <img src="https://img.icons8.com/ios-glyphs/30/000000/verified-account--v2.png" />
+                        </button>
+                        <button class="adicao">
+                            <img src="https://img.icons8.com/ios-glyphs/30/000000/edit--v2.png" />
+                        </button>
+                        <button class="adicao">
+                            <img src="https://img.icons8.com/ios-glyphs/30/000000/trash--v3.pngg" />
+                        </button>
+                    </div>
+                </div>
+                <div class ="perg">
+        
+                    <p class="corpoPergunta">
+                        <input type="radio" name="simNao" id="" class="corpoPergunta" checked> 
+                        Sim
+                    </p>
+
+                    <p class="corpoPergunta">
+                        <input type="radio" name="simNao" id="" class="corpoPergunta">
+                        Não
+                    </p>
+                    <p class="corpoPergunta1">
+                        <input type="radio" name="simNao" id="" class="corpoPerguntinha">
+                        Talvez
+                    </p>
                 </div>
             </article>
         </div>
         <div class="vazio1"></div>
         <div class="vazio2"> <button class="adicao1">
-            <img src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png" /> Adicionar nova pergunta
-        </button></div>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/add--v1.png" /> Adicionar nova pergunta
+            </button></div>
         <div class="assinatura">
-            <p class="ferramentas">assinatura</p>
+            <div class="ferramentas">
+                <span data-tooltip="Escolha uma opção de assinatura" data-tooltip-position="left">*Assinatura</span>
+            </div>
+            <button class="buttonObrigatorio">CPF</button>
+            <button class="buttonObrigatorio">Assinar</button>
+            <button class="buttonObrigatorio">Foto</button>
         </div>
         <div class="data">
-            <p class="ferramentas">data/localizacao</p>
+            <div class="date">
+                <p>Data inicial</p>
+                <input type="date" name="" id="" class="date1">
+            </div>
+            <div class="date">
+                <p>Data Final</p>
+                <input type="date" name="" id="" class="date1">
+            </div>
         </div>
-    
+
     </main>
 
 </body>
